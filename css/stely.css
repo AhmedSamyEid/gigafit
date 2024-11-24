@@ -1,0 +1,561 @@
+* {
+  margin:0 ;
+  padding: 0;
+  box-sizing: border-box;
+}
+.Container {
+  overflow: hidden;
+  height: 3200px;  
+}
+
+.video-container2 {
+  width: 100%;
+  border-radius: 10px;
+  
+}
+.video {
+  width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+}
+.PREMIUM {
+  position: relative;
+  bottom: 400px;
+  text-align: center;
+  font-size: 50px;
+  color: white;
+  width: 60%;
+  left: 20%;
+}
+.navbar {
+  position: fixed;
+  top: -80px; /* يبدأ خارج الشاشة */
+  width: 100%;
+  background-color: #1b1c2a;
+  display: flex;
+  align-items: center;
+  z-index: 1000;
+  transition: top 0.6s ease; /* حركة سلسة عند التمرير */
+}
+.navbar img {
+  width: 70px;
+  position: relative;
+  left: 2%;
+}
+
+.join {
+  background-color: #4CAF50;
+  color: white;
+  width: 15%;
+  padding: 15px 32px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  position: relative;
+  left: 75%;
+  top: 0;
+  transition: background-color 0.3s ease;
+}
+
+.join:hover {
+  background-color: #5ecf64;
+}
+
+.login-container {
+  background-color: rgb(5, 5, 5);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgb(0, 0, 0);
+  width: 80%;
+  height: 600px;
+  text-align: center;
+  position: fixed; /* استخدام fixed للسماح بتحديد الموقع */
+  top: 50%; /* تعديل القيمة لضبط المكان الرأسي */
+  left: 50%; /* تمركز النموذج أفقيًا */
+  transform: translate(-50%, -50%); /* لتحسين التمركز في منتصف الشاشة */
+}
+
+.login-image {
+  width: 50%;
+  height: auto;
+  position: relative;
+  left: 27%;
+  bottom: 15px;
+  border-radius: 10px 10px 0 0;
+}
+
+h2 {
+  position: relative;
+  bottom: 450px;
+  right: 20%;
+  color: #333;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  position: relative;
+  bottom: 400px;
+  right: 51%;
+  text-align: right;
+  color: #555;
+}
+
+input[type="text"],
+input[type="password"] {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 50%;
+  font-size: 14px;
+  position: relative;
+  bottom: 400px;
+  left: 0%;
+}
+
+button {
+  padding: 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  width: 30%;
+  position: relative;
+  left: 9%;
+  position: relative;
+  bottom: 350px;
+  
+}
+
+button:hover {
+  background-color: #45a049;
+}
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  font-size: 20px;
+  color: #ffffff;
+}
+
+.close-btn:hover {
+  color: #FF0000; /* تغيير اللون عند المرور عليه */
+}
+.img2 {
+  position: relative;
+  bottom: 350px;
+  
+}
+.img2 img {
+  width: 100%;
+}/* إعدادات الأيقونات */
+.controls {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  position: relative;
+  bottom: 300px;
+  right: 30%;
+}
+
+.icon {
+  font-size: 50px;
+  color: #eaefea;
+  cursor: pointer;
+  margin: 0 10px;
+  
+  
+}
+
+/* إعدادات حاوية الصور */
+.image-container4 {
+  width: 500px; /* عرض الحاوية */
+  height: 500px; /* ارتفاع الحاوية، يمكنك تعديله حسب الحاجة */
+  overflow: hidden; /* إخفاء الصورة التي تتجاوز الحاوية */
+  position: relative;
+}
+
+/* إعدادات حاوية الصور الداخلية */
+.image-wrapper {
+  display: flex;
+  transition: transform 0.5s ease; /* إضافة تأثير الانتقال */
+}
+
+/* إعدادات الصور */
+.moving-image {
+  width: 700px; /* عرض الصورة يتطابق مع عرض الحاوية */
+  height: 500px; /* ارتفاع الصورة يتطابق مع ارتفاع الحاوية */
+  object-fit: cover; /* ضبط الصورة لتعبئة الحاوية مع الحفاظ على النسب */
+}
+.lyer {
+  background-color: black;
+  width: 100%;
+  height: 520px;
+}
+.firs {
+  color: #ffffff;
+  position: relative;
+  bottom: 450px;
+  left: 50%;
+  font-size: 40px;
+  width: 50%;
+  
+}
+.prgrf  {
+  color: #ffffff;
+  position: relative;
+  bottom: 450px;
+  left: 50%;
+  font-size: 20px;
+  width: 50%;
+  
+}
+.register-btn {
+  position: relative;
+  top: 70px;
+  
+}
+.img3 {
+  position: relative;
+  bottom: 1240px;
+  
+  
+}
+.img3 img {
+  width: 200%;
+  height: 360px;
+  position: relative;
+  top: 50px;
+  object-fit: initial;
+
+}
+.img3 h1 {
+  position: relative;
+  bottom: 270px;
+  left: 30%;
+  font-size: 45px;
+  color: white;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.Book-Your-Free-Session {
+  position: relative;
+  top: -190px;
+  bottom: 0;
+  left: 35%;
+  background-color: #ffffff47;
+  border-radius: 20px;
+  color: white;
+  width: 30%;
+  font-size: 20px;
+  transition: all 0.4s;
+  cursor: pointer;
+}
+.img6 img {
+  position: relative;
+  left: 50%;
+}
+.YOUR {
+  position: relative;
+  bottom: 450px;
+  font-size: 70px;
+  width: 55%;
+  left: 2%;
+}
+.prgrf2 {
+  position: relative;
+  bottom: 400px;
+  width: 50%;
+  left: 2%;
+  font-size: 20px;
+  font-weight: 10;
+}
+.link {
+  position: relative;
+  right: 40%;
+  bottom: 300px;
+  
+}
+.link img {
+  padding: 15px;
+  cursor: pointer;
+}
+.container44 {
+  position: relative;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.icon {
+  font-size: 2rem;
+  cursor: pointer;
+  margin: 0 20px;
+  user-select: none;
+  position: absolute;
+  top: 50%;
+
+  transform: translateY(-50%);
+  z-index: 1;
+}
+
+#angles-left {
+  left: 0;
+}
+
+#angles-right {
+  right: -32%;
+}
+
+.image-wrapper44 {
+  position: relative;
+  overflow: hidden;
+  height: 600px;
+  width: 100%; /* عرض الـ container */
+  /* max-width: 800px; أقصى عرض للـ container */
+  
+}
+
+.image-container44 {
+  display: flex; /* ترتيب الصور أفقيًا */
+  transition: transform 0.5s ease;
+  width: 300%;
+  height: 700px;
+}
+
+.image44 {
+  cursor: pointer;
+  width: 100%; /* عرض الصورة */
+  /* max-width: 100%; تأكد من عدم تجاوز عرض الصورة عرض الـ container */
+}
+/* @media لشاشات الهواتف الصغيرة (أقل من 600px) */
+@media screen and (max-width: 600px) {
+  .Container {
+    height: auto;
+  }
+  .video-container2 {
+    width: 10%;
+    height: auto;
+  }
+  .PREMIUM h1 {
+    font-size: 60px;
+    width: 100%;
+    left: 0;
+    
+  }
+  .PREMIUM {
+    bottom: 500px;
+  }
+  .navbar {
+    top: -60px;
+    width: 100%;
+  }
+  .login-container {
+    visibility: hidden;
+  }
+  .join {
+    width: 27%;
+    font-size: 17px;
+    text-align: start;
+    left: 0;
+    margin-left: 55%;
+  }
+  
+  .login-image {
+    width: 70%;
+  }
+  
+  .firs h1 {
+    font-size: 40px;
+    
+    width: 200%;
+    position: relative;
+    right: 55%;
+  }
+  .controls {
+    display: none;
+  }
+  .prgrf {
+    font-size: 16px;
+    left: 0;
+    width: 100%;
+    display: none;
+  }
+  .img3 h1 {
+    font-size: 30px;
+    left: 10%;
+    width: 80%;
+    top: 60px;
+    
+  }
+  .img3 img {
+    position: relative;
+    top: 320px;
+  }
+  .Book-Your-Free-Session {
+    width: 70%;
+    left: 15%;
+    top: 120px;
+  }
+  .img6 img {
+    width: 100%;
+  }
+  .image-container4 {
+    display: none;
+  }
+  .image-container46 {
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+    top: 100px;
+  }
+  
+  .image-wrapper66 {
+    display: flex;
+    transition: transform 0.3s ease;
+  }
+  
+  .moving-image {
+    width: 100%;
+    min-width: 100%;
+    height: auto;
+  }
+  .YOUR {
+    font-size: 40px;
+    top: -300px;
+  }
+  .img6 img {
+    width: 350px;
+    top: 70px;
+  }
+  .prgrf2 {
+    top: -250px;
+  }
+  .link img {
+    width: 200px;
+    top: 100;
+    
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label {
+    position: relative;
+    top: 30px;
+    right: 10%;
+    text-align: right;
+    font-size: 20px;
+    color: #555;
+  }
+  
+  input[type="text"],
+  input[type="password"] {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #dbd4d4;
+    border-radius: 5px;
+    width: 80%;
+    font-size: 14px;
+    position: relative;
+    bottom: 0px;
+    left: 10%;
+    top: 40px;
+  }
+  
+button {
+  padding: 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  width: 80%;
+  position: relative;
+  left: 10%;
+  top: 50px;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+.login-container2 {
+  background-color: black;
+  position: relative;
+  bottom: 930px;
+  height: 600px;
+}
+.login-container2 img {
+  width: 350px;
+  position: relative;
+  top: 20px;
+  left: -0;
+  margin-left: 20%;
+}
+}
+
+/* @media لشاشات التابلت (أقل من 1024px) */
+/* @media screen and (max-width: 1024px) {
+  .PREMIUM {
+    font-size: 40px;
+    width: 80%;
+    left: 10%;
+  }
+  .navbar {
+    top: -70px;
+  }
+  .join {
+    width: 30%;
+    left: 65%;
+  }
+  .login-container {
+    width: 70%;
+  }
+  .login-image {
+    width: 60%;
+  }
+  .moving-image {
+    width: 100%;
+  }
+  .firs {
+    font-size: 35px;
+    width: 70%;
+    left: 15%;
+  }
+  .prgrf {
+    font-size: 18px;
+    width: 70%;
+    left: 15%;
+  }
+  .img3 h1 {
+    font-size: 40px;
+    left: 20%;
+  }
+  .Book-Your-Free-Session {
+    width: 50%;
+    left: 25%;
+  }
+  .img6 img {
+    width: 80%;
+  }
+} */
+
+/* @media لشاشات الكمبيوتر (أكثر من 1024px) */
+@media screen and (min-width: 1025px) {
+
+  .image-container46 {
+    display: none;
+  }
+  .login-container2 {
+    visibility: hidden;
+  }
+}
